@@ -33,7 +33,17 @@ public class App {
         app.handleMessage(new Add(3));
         app.handleMessage(new Add(5));
         app.handleMessage(new Calc());
+
     }
+
+    // public void doStuff() {
+    //     this.insertedValues.add(1337);
+
+    //     var sum = this.insertedValues.stream().reduce(0, (a, b) -> a + b);
+    //     System.out.println(sum);
+    //     System.out.println(this.someMap.get(sum));
+    //     this.insertedValues.clear();
+    // }
 
     interface Message {
         <T> T match(Matcher<T> matcher);
